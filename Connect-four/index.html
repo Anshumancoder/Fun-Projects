@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="playerturn">Demo text</div>
+        <div id="playerturn">Connect 4</div>
         <div class="container"></div>
         <div id="information">
             <div class="player-wrappers">
@@ -25,6 +25,14 @@
         <div id="message"></div>
         <button id="start">Start Game</button>
     </div>
+<!-- Popup for win/draw -->
+<div class="popup hide" id="gamePopup">
+  <div class="popup-content">
+    <p id="popupMessage">Player X wins!</p>
+    <button id="restartBtn">Restart</button>
+  </div>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
