@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <div class="details">
+            <div class="nowplaying">Playing x of y</div>
+            <div class="trackart"></div>
+            <div class="trackname">Track Name</div>
+            <div class="trackartist">Track Artist</div>
+        </div>
+        <div class="buttons">
+            <div class="previoustrack" onclick="previoustrack()">
+                <i class="fas fa-step-backward fa-2x"></i>
+            </div>
+            <div class="playpausetrack" onclick="playpausetrack()">
+                <i class="fas fa-play-circle fa-5x"></i>
+            </div>
+            <div class="nexttrack" onclick="nexttrack()">
+                <i class="fas fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="slider_container">
+            <div class="currenttime">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seekslider" onchange="seekto()">
+            <div class="totalduration">00:00</div>
+        </div>
+        <div class="slidercontainer">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volumeslider" onchange="setvolume()">
+            <i class="fas fa-volume-up"></i>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

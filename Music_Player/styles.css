@@ -1,0 +1,96 @@
+    body {
+            background-color: lightgreen;
+            transition: background-color 0.5s;
+            font-family: Arial, sans-serif;
+        }
+
+        .player {
+            height: 95vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .trackart {
+            margin: 25px;
+            height: 250px;
+            width: 250px;
+            background-size: cover;
+            border-radius: 15%;
+        }
+
+        .nowplaying {
+            font-size: 1rem;
+        }
+
+        .trackname {
+            font-size: 2rem;
+        }
+
+        .trackartist {
+            font-size: 1.5rem;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .playpausetrack, .previoustrack, .nexttrack {
+            padding: 25px;
+            opacity: 0.8;
+            transition: opacity 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .playpausetrack:hover, .previoustrack:hover, .nexttrack:hover {
+            opacity: 1.0;
+            transform: scale(1.1);
+        }
+
+        .slider_container, .slidercontainer {
+            width: 75%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .seekslider, .volumeslider {
+            -webkit-appearance: none;
+            height: 5px;
+            background: black;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .seekslider:hover, .volumeslider:hover {
+            opacity: 1.0;
+        }
+
+        .seekslider::-webkit-slider-thumb, .volumeslider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: white;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .seekslider { width: 60%; }
+        .volumeslider { width: 30%; }
+
+        .currenttime, .totalduration {
+            padding: 10px;
+        }
